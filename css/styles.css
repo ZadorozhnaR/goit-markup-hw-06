@@ -581,6 +581,13 @@ img {
   border: none;
 
   cursor: pointer;
+
+  transition: background-color var(--transition-standart);
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  background-color: var(--ocean);
 }
 
 .subscribe-icon {
@@ -795,4 +802,24 @@ img {
 
 .modal-icon {
   fill: currentColor;
+}
+
+.send-btn {
+  width: 169px;
+  height: 56px;
+
+  color: var(--white);
+  background: var(--iris);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+
+  cursor: pointer;
+
+  transition: backgroud-color var(--transition-standart);
+}
+
+.send-btn:hover,
+.send-btn:focus {
+  background-color: var(--ocean);
 }
