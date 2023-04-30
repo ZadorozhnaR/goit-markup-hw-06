@@ -488,6 +488,8 @@ img {
   background-color: var(--navy-blue-bg);
   padding-top: 100px;
   padding-bottom: 100px;
+
+  position: relative;
 }
 
 .footer-cont {
@@ -570,6 +572,9 @@ img {
   padding: 8px 24px;
   gap: 16px;
 
+  position: absolute;
+  left: 77.5%;
+  top: 44.87%;
   color: var(--white);
   background-color: var(--iris);
   border-radius: 4px;
