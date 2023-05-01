@@ -568,12 +568,22 @@ img {
 .footer-form-input {
   width: 264px;
   height: 40px;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  align-items: center;
+  padding-left: 16px;
 
   background-color: transparent;
+  color: var(--white);
 
   border: 1px solid #ffffff;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+}
+
+.footer-form-input::placeholder {
+  color: var(--white);
 }
 
 .footer-form-field {
@@ -866,6 +876,43 @@ img {
   left: 0px;
 
   transform: translateY(-50%) translateX(16px);
+
+  transition: fill var(--transition-standart);
+
+  pointer-events: none;
+}
+
+.modal-form-input:focus + .modal-form-icon {
+  fill: var(--iris);
+}
+
+.modal-form-comment {
+  display: block;
+  width: 100%;
+  min: height 120px;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  padding-top: 8px;
+
+  resize: none;
+
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  outline: 2px transparent;
+  outline-offset: -2px;
+
+  transition: border-color var(--transition-standart);
+}
+
+.modal-form-comment:focus {
+  border-color: var(--iris);
+}
+
+.modal-form-comment::placeholder {
+  color: rgba(46, 47, 66, 0.4);
 }
 
 .send-btn {
