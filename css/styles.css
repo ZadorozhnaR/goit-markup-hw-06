@@ -876,6 +876,7 @@ img {
 
 .modal-form-input:focus {
   border-color: var(--iris);
+  font-size: 12px;
 }
 
 .modal-form-icon {
