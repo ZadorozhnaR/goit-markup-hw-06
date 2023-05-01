@@ -495,11 +495,11 @@ img {
 .footer-cont {
   display: flex;
   align-items: baseline;
-  gap: 120px;
 }
 
 .footer-logo-cont {
   width: 264px;
+  margin-right: 120px;
 }
 
 .footer-logo link {
@@ -528,6 +528,10 @@ img {
   width: 264px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+.footer-socials {
+  margin-right: 80px;
 }
 
 .footer-title {
@@ -573,6 +577,7 @@ img {
   letter-spacing: 0.04em;
   align-items: center;
   padding-left: 16px;
+  padding-right: 16px;
 
   background-color: transparent;
   color: var(--white);
@@ -895,7 +900,10 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
   padding-left: 16px;
+  padding-right: 16px;
   padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
 
   resize: none;
 
@@ -915,7 +923,63 @@ img {
   color: rgba(46, 47, 66, 0.4);
 }
 
+.modal-form-agreement {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+  justify-content: center;
+}
+
+.modal-form-agreement-box {
+  appearance: none;
+}
+
+.modal-form-agreement-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.modal-form-agreement-unchecked {
+  opacity: 1;
+  transition: var(--transition-standart);
+}
+
+input[type="checkbox"]:checked
+  + .modal-form-agreement-icon
+  > .modal-form-agreement-unchecked {
+  opacity: 0;
+}
+
+.modal-form-agreement-checked {
+  opacity: 0;
+  transition: var(--transition-standart);
+}
+
+input[type="checkbox"]:checked
+  + .modal-form-agreement-icon
+  > .modal-form-agreement-checked {
+  opacity: 1;
+}
+
+.modal-form-agreement-text {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+
+  color: var(--light-slate);
+}
+
+.modal-form-agreement-link {
+  color: var(--iris);
+}
+
 .send-btn {
+  display: block;
+  margin: 0 auto;
+
   width: 169px;
   height: 56px;
 
