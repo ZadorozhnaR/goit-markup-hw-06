@@ -857,6 +857,7 @@ img {
 .modal-form-field {
   position: relative;
   margin-bottom: 8px;
+  font-size: 12px;
 }
 
 .modal-form-input {
@@ -864,7 +865,6 @@ img {
   height: 40px;
   padding-left: 38px;
   padding-right: 38px;
-  font-size: 12px;
 
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
