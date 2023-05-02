@@ -603,6 +603,10 @@ img {
   padding: 8px 24px;
   gap: 16px;
 
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
   color: var(--white);
   background-color: var(--iris);
   border-radius: 4px;
@@ -786,7 +790,10 @@ img {
 
   width: 408px;
   min-height: 584px;
-  padding: 24px;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-bottom: 24px;
+  padding-top: 72px;
 
   background-color: var(--dairy);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -834,7 +841,6 @@ img {
 
 .modal-title {
   display: block;
-  margin-top: 48px;
   margin-bottom: 16px;
 
   line-height: 1.5;
@@ -883,6 +889,8 @@ img {
   top: 50%;
   left: 0px;
 
+  fill: var(--navy-blue);
+
   transform: translateY(-50%) translateX(16px);
 
   transition: fill var(--transition-standart);
@@ -897,7 +905,7 @@ img {
 .modal-form-comment {
   display: block;
   width: 100%;
-  min: height 120px;
+  height: 120px;
 
   font-size: 12px;
   line-height: 1.17;
@@ -985,6 +993,10 @@ input[type="checkbox"]:checked
 
   width: 169px;
   height: 56px;
+
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
 
   color: var(--white);
   background: var(--iris);
